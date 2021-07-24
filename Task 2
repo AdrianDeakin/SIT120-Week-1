@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightgreen;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 40px;
+}
+
+p2 {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Task 2 - Adding CSS to the website</h1>
+<p>This is my first testing paragraph.</p>
+<p2>This is my second testing paragraph.</p2>
+
+</body>
+</html>
