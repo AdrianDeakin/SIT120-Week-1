@@ -1,0 +1,25 @@
+--------------------------------HTML--------------------------------
+
+<h1>Todos</h1>
+
+<input type="checkbox" id="a1" name="a1" value="a1" v-model="todolistv1">
+<label for="a1"> Assignment 1 : Project</label><br>
+ 
+<input type="checkbox" id="a2" name="a2" value="a2" v-model="todolistv1">
+<label for="a2"> Assignment 2 : Project and PPT</label><br>
+
+<input type="checkbox" id="a3" name="a3" value="a3" v-model="todolistv1" checked>
+<label for="a3"> <del>Assignment 3 : Portfolio</del></label><br>
+
+<!-- <span>Checked names: {{ todolistv1 }}</span> -->
+
+
+
+--------------------------------JS--------------------------------
+
+new Vue({
+  el: '...',
+  data: {
+    todolistv1: []
+  }
+})
