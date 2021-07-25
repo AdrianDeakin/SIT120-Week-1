@@ -1,0 +1,64 @@
+------------------HTML------------------
+
+<div id="app">
+ <h2>Todos:</h2>
+ <ol>
+  <li v-for="todo in todos">
+   <label>
+   <input type="checkbox"
+   v-on:change="toggle(todo)"
+   v-bind:checked="todo. done">
+   <del v-if="todo. done">
+   {{ todo.text }}
+   </del>
+   <span V-elses>
+   {{ todo. text }}
+   </span>
+   </label>
+  </li>
+ </ol>
+</div>
+
+
+------------------CSS------------------
+body {
+background: #20262E;.
+padding: 20px;
+font-family: Helvetica;
+}
+#app{
+background: #fff;
+B border-radius: 4px;
+padding: 20px;.
+10 transition: all 0.2s;
+}
+li{
+margin: 8px 0;
+}
+h2 {
+font-weight: bold;
+margin-bottom: 15px;
+}
+del {
+color: rgba(0, 0, 0, 0.3);
+}
+
+
+------------------JS------------------
+new Vue({
+el: "#app",
+data: {
+ todos: [
+   { text: "Assignment 1", done: true },
+   { text: "Assignment 2", done: false },
+   { text: "Assignment 3", done: false },
+   { text: "Assignment 4", done: false },
+   { text: "Assignment 5", done: false }
+ ]
+ },
+ methods: {
+ toggle: function(todo){
+   todo.done = !todo.done
+ }
+ }
+ })
